@@ -1,6 +1,12 @@
 import argparse
 
-from tax_calculator.engine.calculator import calculate_tax
+# Import path compatible with both layouts:
+# 1) nested package layout: tax_calculator/engine/...
+# 2) flat repo layout: engine/...
+try:
+    from tax_calculator.engine.calculator import calculate_tax
+except ModuleNotFoundError:
+    from engine.calculator import calculate_tax
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -42,6 +48,6 @@ def main() -> int:
     return 0
 
 
-# Enable running this module directly: python -m tax_calculator.main
+# Enable direct execution: python main.py --income ...
 if __name__ == "__main__":
     raise SystemExit(main())
