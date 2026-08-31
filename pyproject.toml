@@ -1,0 +1,27 @@
+[build-system]
+# Use setuptools as the packaging backend for this CLI project.
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tax-calculator"
+version = "0.1.0"
+description = "Indian income tax calculator (estimation-only CLI project)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  # YAML parser for future config-driven tax rules (T014+).
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  # Unit testing framework requested in setup tasks.
+  "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+# Keep test discovery explicit and predictable.
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-q"

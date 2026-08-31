@@ -4,17 +4,21 @@ Each item is intentionally small: **one task = one prompt**.
 
 ## 0) Project Setup
 
-### T001 - Initialize package structure
+### T001 - Initialize package structure [Done]
 **Prompt:** Create Python package folders `tax_calculator/input`, `tax_calculator/validation`, `tax_calculator/rules`, `tax_calculator/engine`, `tax_calculator/output`, and add `__init__.py` in each.
+**Status:** Completed
 
-### T002 - Create app entry point
+### T002 - Create app entry point [Done]
 **Prompt:** Add CLI entry file `tax_calculator/main.py` with a `main()` function and argument parsing placeholder.
+**Status:** Completed
 
-### T003 - Add dependency and tool config
+### T003 - Add dependency and tool config [Done]
 **Prompt:** Add project dependencies and tooling config (for example `pyproject.toml`) including `pytest` and any YAML parser needed.
+**Status:** Completed  added `pyproject.toml` and updated `requirements.txt` with `pytest` + `PyYAML`.
 
-### T004 - Add base README disclaimer
+### T004 - Add base README disclaimer [Done]
 **Prompt:** Add estimation-only disclaimer and project scope summary to `README.md`.
+**Status:** Completed added disclaimer and scope sections in `README.md`.
 
 ## 1) Input Contract
 
@@ -201,3 +205,5 @@ Each item is intentionally small: **one task = one prompt**.
 
 ### T060 - Pre-release checklist
 **Prompt:** Add a release checklist covering tests, rule review, and disclaimer verification.
+
+
