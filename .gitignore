@@ -1,0 +1,7 @@
+# Project planning and requirement notes
+/docs/tasks.md
+/docs/requirements.md
+
+# Also ignore same filenames if added elsewhere
+tasks.md
+requirements.md
