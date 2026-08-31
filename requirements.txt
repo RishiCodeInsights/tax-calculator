@@ -1,0 +1,4 @@
+# Runtime dependencies
+
+# Dev/testing dependencies
+pytest>=8.0.0
